@@ -1,0 +1,15 @@
+{
+  "specName": "cypress\\e2e\\B20-RCT211.cy.js",
+  "title": "fw18_0381 generate score",
+  "suiteName": "c2",
+  "testName": "c2 fw18_0381 generate score",
+  "testError": "The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of undefined (reading 'length')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.",
+  "testCommands": [
+    "visit https://cozy-otter-41eca1.netlify.app/",
+    "window ",
+    "its .store",
+    "assert expected **{ Object (dispatch, subscribe, ...) }** to exist",
+    "writeFile b20-E2-results/rct211-results.json",
+    "uncaught exception TypeError: Cannot read properties of undefined (reading 'length')"
+  ]
+}

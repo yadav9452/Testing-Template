@@ -1,0 +1,19 @@
+{
+  "specName": "cypress\\e2e\\B20-RCT211.cy.js",
+  "title": "Check if the Filter search params are working with initial checks in URL",
+  "suiteName": "c2",
+  "testName": "c2 Check if the Filter search params are working with initial checks in URL",
+  "testError": "Timed out retrying after 4000ms: expected '<input>' to be 'checked'",
+  "testCommands": [
+    "visit https://luminous-kitsune-155e5c.netlify.app/",
+    "window ",
+    "its .store",
+    "assert expected **{ Object (dispatch, subscribe, ...) }** to exist",
+    "visit https://luminous-kitsune-155e5c.netlify.app/?category=Analog&category=Digital",
+    "xhr  GET http://localhost:8080/watches",
+    "get [data-testid=filter-category]",
+    "find [value='Analog']",
+    "assert expected **<input>** to be **checked**",
+    "xhr  GET http://localhost:8080/watches"
+  ]
+}

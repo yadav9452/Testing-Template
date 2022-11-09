@@ -1,0 +1,20 @@
+{
+  "specName": "cypress\\e2e\\B20-RCT211.cy.js",
+  "title": "Check if Filters are working with updating multiple data",
+  "suiteName": "c2",
+  "testName": "c2 Check if Filters are working with updating multiple data",
+  "testError": "Timed out retrying after 4000ms: expected 'https://luminous-kitsune-155e5c.netlify.app/' to equal 'https://luminous-kitsune-155e5c.netlify.app/?category=Analog&category=Digital&category=Chronograph'",
+  "testCommands": [
+    "visit https://luminous-kitsune-155e5c.netlify.app/",
+    "window ",
+    "its .store",
+    "assert expected **{ Object (dispatch, subscribe, ...) }** to exist",
+    "get [type=\"checkbox\"]",
+    "xhr  GET http://localhost:8080/watches",
+    "check [Analog, Digital, Chronograph]",
+    "check [Analog, Digital, Chronograph]",
+    "check [Analog, Digital, Chronograph]",
+    "url ",
+    "assert expected **https://luminous-kitsune-155e5c.netlify.app/** to equal **https://luminous-kitsune-155e5c.netlify.app/?category=Analog&category=Digital&category=Chronograph**"
+  ]
+}

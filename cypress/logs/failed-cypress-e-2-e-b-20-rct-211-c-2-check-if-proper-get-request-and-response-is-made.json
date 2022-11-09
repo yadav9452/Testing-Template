@@ -1,0 +1,22 @@
+{
+  "specName": "cypress\\e2e\\B20-RCT211.cy.js",
+  "title": "Check if proper GET request and response is made",
+  "suiteName": "c2",
+  "testName": "c2 Check if proper GET request and response is made",
+  "testError": "Timed out retrying after 4000ms: expected [] to have a length of 15 but got 0",
+  "testCommands": [
+    "visit https://luminous-kitsune-155e5c.netlify.app/",
+    "window ",
+    "its .store",
+    "assert expected **{ Object (dispatch, subscribe, ...) }** to exist",
+    "url ",
+    "assert expected **https://luminous-kitsune-155e5c.netlify.app/** to equal **https://luminous-kitsune-155e5c.netlify.app/**",
+    "wait @watches",
+    "xhr  GET http://localhost:8080/watches",
+    "assert successful GET: expected **200** to equal **200**",
+    "assert get url: expected **http://localhost:8080/watches** to match /\\/watches$/",
+    "get @watches",
+    "its .response.body",
+    "assert expected **[]** to have property **length**"
+  ]
+}

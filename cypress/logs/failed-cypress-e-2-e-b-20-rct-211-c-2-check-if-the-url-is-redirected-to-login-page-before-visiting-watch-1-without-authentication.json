@@ -1,0 +1,21 @@
+{
+  "specName": "cypress\\e2e\\B20-RCT211.cy.js",
+  "title": "Check if the url is redirected to login page before visiting /watch/1, without authentication",
+  "suiteName": "c2",
+  "testName": "c2 Check if the url is redirected to login page before visiting /watch/1, without authentication",
+  "testError": "`cy.visit()` failed trying to load:\n\nhttps://luminous-kitsune-155e5c.netlify.app/watches/1\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+  "testCommands": [
+    "visit https://luminous-kitsune-155e5c.netlify.app/",
+    "window ",
+    "its .store",
+    "assert expected **{ Object (dispatch, subscribe, ...) }** to exist",
+    "window ",
+    "its .isAuth",
+    "assert expected **false** to equal **false**",
+    "window ",
+    "its .token",
+    "assert expected **''** to equal **''**",
+    "visit https://luminous-kitsune-155e5c.netlify.app/watches/1",
+    "xhr  GET http://localhost:8080/watches"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "specName": "cypress\\e2e\\B20-RCT211.cy.js",
+  "title": "Check if the number of cards displayed is 15",
+  "suiteName": "c2",
+  "testName": "c2 Check if the number of cards displayed is 15",
+  "testError": "Timed out retrying after 4000ms: Expected to find element: `[data-testid^=watch-card-wrapper]`, but never found it.",
+  "testCommands": [
+    "visit https://luminous-kitsune-155e5c.netlify.app/",
+    "window ",
+    "its .store",
+    "assert expected **{ Object (dispatch, subscribe, ...) }** to exist",
+    "xhr  GET http://localhost:8080/watches",
+    "wait @watches",
+    "get [data-testid^=watch-card-wrapper]",
+    "assert expected **undefined** to have a length of **15** but got **0**"
+  ]
+}

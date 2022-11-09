@@ -1,0 +1,10 @@
+{
+  "specName": "cypress\\e2e\\B20-RCT211.cy.js",
+  "title": "Check Initial Redux Store Structure",
+  "suiteName": "c2",
+  "testName": "c2 Check Initial Redux Store Structure",
+  "testError": "`cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/Users/yrahu/Downloads/Compressed/B20-RCT_211Auto-Eval-Resources-main -/Auto-Eval-Resources-main/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `c2`",
+  "testCommands": [
+    "visit /"
+  ]
+}
